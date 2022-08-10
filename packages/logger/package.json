@@ -1,12 +1,10 @@
 {
-  "name": "@stephen-shopopop/hello",
-  "version": "0.0.2",
+  "name": "@stephen-shopopop/logger",
+  "version": "1.0.0",
   "types": "dist/index.d.ts",
-  "description": "",
+  "description": "logger",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "ts-node index.ts",
     "compile": "rimraf dist/* && tsc -p tsconfig.pkg.json"
   },
   "repository": {
@@ -14,13 +12,10 @@
     "url": "git+https://github.com/stephen-shopopop/mqtt.git"
   },
   "keywords": [],
-  "author": "tech-shopopop <tech@shopopop.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stephen-shopopop/mqtt/issues"
   },
-  "homepage": "https://github.com/stephen-shopopop/mqtt#readme",
-  "dependencies": {
-    "@stephen-shopopop/logger": "file:packages/logger"
-  }
+  "homepage": "https://github.com/stephen-shopopop/mqtt#readme"
 }

@@ -4,7 +4,7 @@ import { hello } from './index'
 describe('[index/hello] hello()', () => {
   test.each`
     string | expected
-    ${'Shopopop'} | ${'hello Shopopop'}
+    ${'Shopopop'} | ${'Welcome to Shopopop'}
   `('returns $expected when hello $string', ({ string, expected }) => {
     expect(hello(string)).toEqual(expected)
   })

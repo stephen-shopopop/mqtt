@@ -1,6 +1,8 @@
 import { Console } from 'console'
 
-enum Color {
+export type Handle = (...value: any) => void
+
+export enum Color {
   Black = '\x1b[30m',
   Red = '\x1b[31m',
   Green = '\x1b[32m',
@@ -13,4 +15,7 @@ enum Color {
 
 const console = new Console({ stdout: process.stdout, stderr: process.stderr })
 
-export const logger = (...data: any): void => console.info(Color.Yellow, `[${new Date().toISOString()} - Broker]`, ...data, Color.Black)
+export function logger (name: string, color: Color): Handle {
+  return (...data: any): void =>
+    console.log(color, `[${new Date().toISOString()} - ${name}]`, ...data, Color.Black)
+}

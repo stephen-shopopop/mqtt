@@ -96,6 +96,7 @@ npm run dev -ws
 7. npm run release - Tag release
 8. npm run prerelease - Tag pre release
 9. npm run fix - Tag fix
+
 ### Package maintenance
 
 A modern cli tool that keeps your deps fresh

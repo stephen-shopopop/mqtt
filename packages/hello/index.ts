@@ -1,5 +1,9 @@
+import { Color, logger } from '@stephen-shopopop/logger'
+
+const debug = logger('main', Color.Cyan)
+
 export function hello (name: string): string {
-  return 'hello ' + name
+  return 'Welcome to ' + name
 }
 
-console.log(hello(' you'))
+debug(hello(' MQTT DEMO'))
