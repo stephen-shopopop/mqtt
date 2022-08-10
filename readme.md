@@ -18,6 +18,12 @@ demonstration nodejs MQTT
 
 ## Docs
 
+MQTT1 (Message Queuing Telemetry Transport2) est un protocole de messagerie publish-subscribe basé sur le protocole TCP/IP.
+
+Il a été initialement développé par Andy Stanford-Clark (IBM) et Arlen Nipper (EuroTech). Il est conçu pour les connexions avec des sites distants où la bande passante du réseau est limitée.
+
+MQTT 3.1.1 est un standard OASIS, la version 5 de la spécification est maintenant publiée depuis le 7 mars 20193.
+
 ### Summary
 
 Client MQTT standalone:
