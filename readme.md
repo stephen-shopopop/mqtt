@@ -22,13 +22,28 @@ MQTT1 (Message Queuing Telemetry Transport2) est un protocole de messagerie publ
 
 Il a été initialement développé par Andy Stanford-Clark (IBM) et Arlen Nipper (EuroTech). Il est conçu pour les connexions avec des sites distants où la bande passante du réseau est limitée.
 
-MQTT 3.1.1 est un standard OASIS, la version 5 de la spécification est maintenant publiée depuis le 7 mars 20193.
+MQTT 3.1.1 est un standard OASIS, la version 5 de la spécification est maintenant publiée depuis le 7 mars 2019.
 
+- [specification mqtt-v3.1.1](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html)
+- [specification mqtt-v5.0](http://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html)
+  
 ### Summary
 
-Client MQTT standalone:
+**Serveur MQTT 5.0 - 3.1:**
+
+- [Eclipse mosquitto](https://mosquitto.org)
+- [EMQX](https://www.emqx.io)
+- [Aedes](https://github.com/moscajs/aedes#readme)
+  
+**Serveur MQTT de test:**
+
+- [mosquitto mqtt testing](https://test.mosquitto.org)
+- [emqx mqtt testing](https://www.emqx.com/en/mqtt/public-mqtt5-broker)
+
+**Client MQTT standalone:**
 
 - [mqttx](https://mqttx.app)
+- [mqttfx](https://mqttfx.jensd.de)
 
 ---
 ## Contributing
