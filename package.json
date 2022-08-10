@@ -24,12 +24,8 @@
   ],
   "scripts": {
     "build": "npm run compile -ws",
-    "build:extra": "tsc --build",
     "prepare": "npm run build",
-    "version": "npm run build",
-    "prepublishOnly": "npm run build",
     "test": "jest --reporters=default",
-    "clean": "rimraf dist",
     "lint": "ts-standard --verbose | snazzy",
     "lint:fix": "ts-standard --fix",
     "typecheck": "tsc --noEmit",
@@ -38,7 +34,7 @@
     "fix": "standard-version -- --release-as minor"
   },
   "keywords": [
-    "standard"
+    "mqtt"
   ],
   "author": "tech-shopopop <tech@shopopop.com>",
   "license": "ISC",
