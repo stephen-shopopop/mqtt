@@ -16,6 +16,15 @@ demonstration nodejs MQTT
 - [macos/linux](https://github.com/nvm-sh/nvm) or use Makefile command: ```make nvm```
 - [windows](https://github.com/coreybutler/nvm-windows)
 
+## Docs
+
+### Summary
+
+Client MQTT standalone:
+
+- [mqttx](https://mqttx.app)
+
+---
 ## Contributing
 
 Run package project:
@@ -87,17 +96,6 @@ npm run dev -ws
 7. npm run release - Tag release
 8. npm run prerelease - Tag pre release
 9. npm run fix - Tag fix
-
-## Production
-
-```bash
-npm i --production
-```
-
-## Docs
-
-### Summary
-
 ### Package maintenance
 
 A modern cli tool that keeps your deps fresh
