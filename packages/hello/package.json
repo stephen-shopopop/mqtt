@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephen-shopopop/{repository}.git"
+    "url": "git+https://github.com/stephen-shopopop/mqtt.git"
   },
   "keywords": [],
   "author": "tech-shopopop <tech@shopopop.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephen-shopopop/{repository}/issues"
+    "url": "https://github.com/stephen-shopopop/mqtt/issues"
   },
-  "homepage": "https://github.com/stephen-shopopop/{repository}#readme"
+  "homepage": "https://github.com/stephen-shopopop/mqtt#readme"
 }
