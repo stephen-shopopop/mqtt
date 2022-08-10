@@ -1,6 +1,6 @@
 import { Color, logger } from '@stephen-shopopop/logger'
 
-const debug = logger('main', Color.Cyan)
+const debug = logger('Hello', Color.Cyan)
 
 export function hello (name: string): string {
   return 'Welcome to ' + name

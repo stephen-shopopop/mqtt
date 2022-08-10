@@ -17,5 +17,5 @@ const console = new Console({ stdout: process.stdout, stderr: process.stderr })
 
 export function logger (name: string, color: Color): Handle {
   return (...data: any): void =>
-    console.log(color, `[${new Date().toISOString()} - ${name}]`, ...data, Color.Black)
+    console.log(color, `[${name.toUpperCase()}]`, ...data, Color.Black)
 }

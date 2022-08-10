@@ -7,7 +7,7 @@ import ws from 'websocket-stream'
 const port = 1883
 const wsPort = 8883
 
-const debug = logger('Broker', Color.Yellow)
+const debug = logger('Broker', Color.Cyan)
 
 const broker = aedes()
 const server = net.createServer(broker.handle)

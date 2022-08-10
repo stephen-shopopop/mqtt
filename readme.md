@@ -71,31 +71,16 @@ Add reference package (better reference):
 }
 ```
 
-Publish all package (optionnal):
-
-```shell
-npm publish --workspaces --access public
-```
-
-Extra:
-
-```shell
-// Start all projets
-npm run start -ws
-
-// Start all projets in dev mode
-npm run dev -ws
-```
-
-1. npm run test -  Run tests.
-2. npm run build - Build each packages
-3. npm run build:extra  - Build each package in dist isolate
-4. npm run lint - Run lint
-5. npm run lint:fix - Run lint autofix
-6. npm run typecheck - Run typecheck
-7. npm run release - Tag release
-8. npm run prerelease - Tag pre release
-9. npm run fix - Tag fix
+1. npm start - Start project.
+2. npm run test -  Run tests.
+3. npm run build - Build each packages
+4. npm run build:extra  - Build each package in dist isolate
+5. npm run lint - Run lint
+6. npm run lint:fix - Run lint autofix
+7. npm run typecheck - Run typecheck
+8. npm run release - Tag release
+9. npm run prerelease - Tag pre release
+10. npm run fix - Tag fix
 
 ### Package maintenance
 

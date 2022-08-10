@@ -23,7 +23,9 @@
     "stephen.deletang@shopopop.com"
   ],
   "scripts": {
-    "start": "npm start -ws",
+    "start": "concurrently \"npm:start:*\" -p \"[{time} {name}]\" -c \"green,blue,yellow,blue,yellow,red,white,gray,cyan,magenta\"",
+    "start:hello": "npm start -w=@stephen-shopopop/hello",
+    "start:broker": "npm start -w=@stephen-shopopop/broker",
     "dev": "npm run dev -ws",
     "build": "npm run compile -ws",
     "prepare": "npm run build",
@@ -72,5 +74,8 @@
     "ts-node": "^10.9.1",
     "ts-standard": "^11.0.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
   }
 }

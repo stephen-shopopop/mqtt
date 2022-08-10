@@ -18,8 +18,7 @@ run: ## NPM install
 	. $(NVM_DIR)/nvm.sh && nvm use $(NODE) && $(CMD)
 
 all: 
-	make install
-	make run CMD="npm install"
+	make run CMD="npm start"
 
 install: ## Install node version
 	. $(NVM_DIR)/nvm.sh && nvm install $(NODE)
