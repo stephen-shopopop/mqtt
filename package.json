@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-workspace",
+  "name": "nodejs-mqtt",
   "version": "1.0.0",
-  "description": "workspace typescript nodejs with ts-standard",
+  "description": "nodejs mqtt",
   "private": true,
   "engines": {
     "node": ">=16.15.0",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{repository}.git"
+    "url": "git+https://github.com/stephen-shopopop/mqtt.git"
   },
   "bugs": {
-    "url": "https://github.com/{repository}/issues"
+    "url": "https://github.com/stephen-shopopop/mqtt/issues"
   },
   "contributors": [
     "stephen.deletang@shopopop.com"
