@@ -26,7 +26,6 @@
     "start": "concurrently \"npm:start:*\" -p \"[{time} {name}]\" -c \"green,blue,yellow,blue,yellow,red,white,gray,cyan,magenta\"",
     "start:hello": "npm start -w=@stephen-shopopop/hello",
     "start:broker": "npm start -w=@stephen-shopopop/broker",
-    "gen:template": "node gen.js",
     "dev": "npm run dev -ws",
     "build": "npm run compile -ws",
     "prepare": "npm run build",

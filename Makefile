@@ -3,7 +3,7 @@ PROJECT ?= $(shell node -p "require('./package.json').name")
 NVM = v0.38.0
 NODE ?= $(shell cat $(PWD)/.nvmrc 2> /dev/null || echo v16.15.0)
 
-.PHONY: help all build install nvm test lint lint-autofix typecheck release git-hooks
+.PHONY: help all build install nvm test lint lint-autofix typecheck release git-hooks gen
 
 default: help
 
@@ -44,6 +44,9 @@ release: ## Make a release (git tag)
 
 git-hooks: ## Install git hooks
 	make run CMD="npx simple-git-hooks"
+
+gen: # Generate packages child
+	make run CMD="node generate.js"
 
 nvm: ## Install nvm: restart your terminal after nvm install
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM}/install.sh | bash
