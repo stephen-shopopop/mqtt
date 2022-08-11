@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-mqtt",
+  "name": "mqtt",
   "version": "1.1.1",
   "description": "nodejs mqtt",
   "private": true,
