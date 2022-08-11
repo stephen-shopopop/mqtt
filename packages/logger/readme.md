@@ -10,11 +10,11 @@
 ## Description
 
 ```typescript
-import { debug } from '@stephen-shopopop/logger'
+import { logger } from '@stephen-shopopop/logger'
 
 // Instance
-const logger = debug('MyService', Color.Yellow)
+const debug = logger('MyService', Color.Yellow)
 
 // Usage like console.log
-logger('Hello world') 
+debug('Hello world') 
 ```
