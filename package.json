@@ -52,6 +52,7 @@
     ],
     "ignore": [
       "dist",
+      "www",
       "docs",
       "jest.config.ts",
       "commitlint.config.js"

@@ -62,7 +62,7 @@ async function main () {
 
 ## Description
 
-Template nodejs typescript on workspace
+Template nodejs typescript
 
 ## Contributing
 
