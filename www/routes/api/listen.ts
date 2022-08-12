@@ -18,7 +18,11 @@ export const handler: Handlers = {
     });
 
     return new Response(stream.pipeThrough(new TextEncoderStream()), {
-      headers: { "content-type": "text/event-stream" },
+      headers: {
+        "connection": "keep-alive",
+        "cache-control": "no-cache",
+        "content-type": "text/event-stream"
+      },
     });
   },
 };
