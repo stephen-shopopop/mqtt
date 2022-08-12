@@ -49,10 +49,10 @@ fmt: ## deno format files
 	$(FMT)
 
 run: ## deno run production mode
-	$(RUN) --allow-read --allow-write --allow-net --allow-run --allow-env main.ts
+	$(RUN) --unstable --allow-read --allow-write --allow-net --allow-run --allow-env main.ts
 
 dev: ## deno run dev mode
-	$(RUN) -A --watch=static/,routes/ dev.ts 
+	$(RUN) -A --unstable  --watch=static/,routes/ dev.ts 
 
 install:
 	$(DENO) install .
@@ -66,4 +66,4 @@ build: ## deno build binary
 
 inspect: ## deno inspect 
 	@echo "Open chrome & chrome://inspect"
-	$(INSPECT) --allow-all --unstable mod.ts
+	$(INSPECT) --allow-all --unstable main.ts
