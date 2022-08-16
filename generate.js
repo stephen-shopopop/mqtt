@@ -18,13 +18,13 @@ String.prototype.toKebabCase = function () {
 
 // main
 async function main () {
-  const scope = await question('Enter Scope (default: @stephen-shopopop):') || '@stephen-shopopop'
+  const scope = await question('Enter Scope (default: @stephen-shopopop):') || 'stephen-shopopop'
   const scopeName = scope.toKebabCase()
 
   const name = await question('What is the name of the package ? ')
   const packageName = name.toKebabCase()
 
-  const cmd = `npm init --scope=${scopeName} -y -w ./packages/${packageName}`
+  const cmd = `npm init --scope=@${scopeName} -y -w ./packages/${packageName}`
   execSync(cmd.toString(), {
     cwd: __dirname,
     stdio: 'inherit'
