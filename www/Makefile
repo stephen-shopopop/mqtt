@@ -62,7 +62,7 @@ clean: ## clean  binary
 
 build: ## deno build binary
 	rm -f bin/*
-	$(BUILD) --output=bin/${NAME} -A --unstable mod.ts
+	$(BUILD) --output=bin/${NAME} -A --unstable main.ts
 
 inspect: ## deno inspect 
 	@echo "Open chrome & chrome://inspect"
