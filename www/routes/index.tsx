@@ -1,19 +1,16 @@
-/** @jsx h */
-import { tw } from "@twind";
-import { h } from "preact";
 import Counter from "../islands/Counter.tsx";
 
 export default function Home() {
   return (
-    <div class={tw`p-4 mx-auto max-w-screen-md`}>
+    <div class="p-4 mx-auto max-w-screen-md">
       <img
         src="/logo.svg"
         height="100px"
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
-      <p class={tw`my-6`}>
-        Welcome to `DEMO MQTT`. Try updating this message in the ./routes/index.tsx
-        file, and refresh.
+      <p class="my-6">
+        Welcome to `DEMO MQTT`. Try updating this message in the
+        ./routes/index.tsx file, and refresh.
       </p>
       <Counter start={3} />
 

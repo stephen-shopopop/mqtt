@@ -13,7 +13,7 @@ BUILD   = $(DENO) compile
 DEPS    = $(DENO) info
 INSPECT = $(DENO) run --inspect-brk
 
-DENOVERSION = 1.24.2
+DENOVERSION = 1.25.3
 
 .PHONY: help clean deno-install install deno-version deno-upgrade check fmt dev env build inspect run
 
@@ -60,9 +60,11 @@ install:
 clean: ## clean  binary
 	rm -fr bin
 
-build: ## deno build binary
-	rm -f bin/*
-	$(BUILD) --output=bin/${NAME} -A --unstable mod.ts
+vendor: ## deno vendor
+	$(DENO) vendor main.ts
+
+test: ## deno run test
+	$(TEST)
 
 inspect: ## deno inspect 
 	@echo "Open chrome & chrome://inspect"

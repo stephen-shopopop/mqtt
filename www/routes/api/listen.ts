@@ -21,7 +21,7 @@ export const handler: Handlers = {
       headers: {
         "connection": "keep-alive",
         "cache-control": "no-cache",
-        "content-type": "text/event-stream"
+        "content-type": "text/event-stream",
       },
     });
   },

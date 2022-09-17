@@ -15,9 +15,8 @@ This will watch the project directory and restart as necessary.
 ### PRODUCTION
 
 ```shell
-denon run 
+denon run
 ```
-
 
 ## Reference
 
